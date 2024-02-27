@@ -1,4 +1,4 @@
-const { returnTwo, greeting, add } = require('./functions.js')
+const { returnTwo, greeting, add, multiply, subtract, divide } = require('./functions.js')
 
 
 
@@ -20,4 +20,16 @@ test('Does this test add two values together?', () => {
 
 test('Does this test add two values together?', () => {
     expect(add(5, 9)).toEqual(14)
+})
+
+test('Does this test multiply two values together?', () => {
+    expect(multiply(2,3)).toEqual(6)
+})
+
+test('Does this test subtract two values together?', () => {
+    expect(subtract(6,3)).toEqual(3)
+})
+
+test('Does this test divide two values together?', () => {
+    expect(divide(10,5)).toEqual(2)
 })
